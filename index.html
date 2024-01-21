@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Tweets</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			font-family: 'Verdana', sans-serif;
+		}
+		body {
+			background-color: #555;
+		}
+		.tweet {
+			margin-bottom: 20px;
+			cursor: default;
+			border: 1px solid #e6ecf0;
+			border-radius: 10px;
+			padding: 12px 20px;
+			width: 700px;
+			display: block;
+			background-color: #fff;
+		}
+		.profile {
+			position: relative;
+		}
+		.profile img {
+			vertical-align: top;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+		}
+		.profile span {
+			font-size: 20px;
+			margin-left: 20px;
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+		.main {
+			font-size: 18px;
+			margin: 12px 0;
+			padding: 16px 0 12px 0;
+			border-top: 1px solid #e6ecf0;
+			border-bottom: 1px solid #e6ecf0;
+		}
+		.main span {
+			font-size: 1rem;
+			margin-top: 12px;
+			display: block;
+			color: #657786;
+		}
+		.main span a {
+			text-decoration: none;
+			color: #1b95e0;
+		}
+		.main span a:hover {
+			border-bottom: 1px solid #1b95e0;
+		}
+		.main img.single {
+			width: 100%;
+			display: block;
+			margin-top: 12px;
+			border-radius: 10px;
+		}
+		.main div {
+			margin-bottom: 12px;
+			display: flex;
+		}
+		.main div.topPad {
+			margin-top: 12px;
+		}
+		.main div > div {
+			margin-bottom: 0 !important;
+		}
+		.main div div {
+			flex: 1;
+		}
+		.main div div img {
+			object-fit: cover;
+			width: 100%;
+			border-radius: 10px;
+		}
+		.main div div:not(:last-child) {
+			margin-right: 10px;
+		}
+		.interactions {
+		}
+		.interactions img {
+			height: 1.2em;
+			vertical-align: text-top;
+		}
+		hr {
+			border: 0;
+			height: 1px;
+			background: #777;
+		}
+	</style>
+</head>
+<body>
+	<div class="tweet">
+		<div class="profile"><img src="davidkaufmann.webp"><span>David Kaufmann</span></div>
+		<div class="main">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			<span>2:59 vorm. · 11. Aug. 2020 · <a href="this">Quelle</a></span>
+		</div>
+		<div class="interactions">6 <img src="like.svg">  · 8 <img src="retweet.svg"> · 9 <img src="comment.svg"></div>
+	</div>
+
+	<div class="tweet">
+		<div class="profile"><img src="davidkaufmann.webp"><span>David Kaufmann</span></div>
+		<div class="main">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			<img class="single" src="https://www.w3schools.com/css/paris.jpg">
+			<span>2:59 vorm. · 11. Aug. 2020 · <a href="this">Quelle</a></span>
+		</div>
+		<div class="interactions">6 <img src="like.svg">  · 8 <img src="retweet.svg"> · 9 <img src="comment.svg"></div>
+	</div>
+
+	<div class="tweet">
+		<div class="profile"><img src="davidkaufmann.webp"><span>David Kaufmann</span></div>
+		<div class="main">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			<div class="topPad">
+				<div><img src="https://www.w3schools.com/css/paris.jpg"></div>
+				<div><img src="https://www.w3schools.com/css/paris.jpg"></div>
+			</div>
+			<div>
+				<div><img src="https://www.w3schools.com/css/paris.jpg"></div>
+				<div><img src="https://www.w3schools.com/css/paris.jpg"></div>
+			</div>
+			<span>2:59 vorm. · 11. Aug. 2020 · <a href="this">Quelle</a></span>
+		</div>
+		<div class="interactions">6 <img src="like.svg">  · 8 <img src="retweet.svg"> · 9 <img src="comment.svg"></div>
+	</div>
+</body>
+</html>
